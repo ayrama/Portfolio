@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Portfolio. Ayrat Aymetov</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <!--navigation------------------------->
+        <nav>
+            <!--logo-->
+            <a href="#" class="logo">Ayrat Aymetov</a>
+            <!--bars--------------->
+            <div class="toggle"></div>
+
+        </nav>
+        <!--text----------------------->
+        <div class="text-container">
+            <p>Hello,</p>
+            <p>I'm AYRAT AYMETOV</p>
+            <p>Brooklyn College CUNY student.</p>
+            <button class="down-cv" onclick="window.open('images/CV.resume.jpg')">Download!</button>
+        </div>
+        <!--model---------------------->
+        <img alt="model" class="model" src="images/safe700px.png">
+
+    </section>
+    <div class="about-container">
+        <!--img-->
+        <img src="images/about-img.png"/>
+        <!--about-me-text-->
+        <div class="about-text">
+            <p>About Me</p>
+            <p>Brooklyn college student. Sophomore. </p>
+            <p>Pursuing major degree in Computer Science and minor in Math </p>
+            <p>Reliable, honest, with high moral standards. </p>
+            <p>Endowed with passion for problem solving and teamwork.</p>
+
+            <button class="down-cv" onclick="window.open('images/CV.resume.jpg')">Download!</button>
+        </div>
+    </div>
+    <!--projects-container---------------------------->
+    <div class="projects ">
+        <!--text-->
+        <div class="projects-text ">
+            <p>My projects</p>
+            <p>Stored in Github</p>
+        </div>
+        <div class="box-container">
+            <!--1------------->
+            <div class="box-1">
+                <span>1</span>
+                <p class="heading">Project 1</p>
+                <p class="details">Implementtion of a sorted tree such as a Binary Search Tree in Java.</p>
+
+                <form action="https://github.com/ayrama/Lab5.git" method="get" target="_blank">
+                    <button type="submit">Jump in</button>
+                </form>
+            </div>
+            <!--2------------->
+            <div class="box-2">
+                <span>2</span>
+                <p class="heading">Project 2</p>
+                <p class="details"> Working with multiple input files. Linked list class, Stack ADT</p>
+                <form action="https://github.com/ayrama/Lab4.git" method="get" target="_blank">
+                    <button type="submit">Jump in</button>
+                </form>
+            </div>
+            <!--3------------->
+            <div class="box-3">
+                <span>3</span>
+                <p class="heading">Project 3</p>
+                <p class="details"> Creation of a grade calculator. GUI interface</p>
+                <form action="https://github.com/ayrama/Lab6.git" method="get" target="_blank">
+                    <button type="submit">Jump in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--more Github projects-->
+    <div class="more-projects">
+        <p>Would you like to see more of my projects?</p>
+        <form action="https://github.com/ayrama" method="get" target="_blank">
+            <button type="submit">Jump in</button>
+        </form>
+    </div>
+    <!--footer--------------->
+    <footer>
+        <!--heading-->
+        <p>Some ways to contact me</p>
+        <!--paragraph-->
+        <p>Do not hesitate to try more than one social service to contact me</p>
+        <!--social-->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ayrat.aymetov"><i class="fab fa-facebook-f"></i></a>
+            <a href="mailto:ayrama1986@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:ayrama1986@outlook.com"><i class="far fa-envelope"></i></a>
+            <a href="https://www.youtube.com/channel/UC3tfWpfzaCBjY668zcILJXA"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/<19147335068?text=Hey, I would like to contact you>"><i class="fas fa-comment"></i></a>
+        </div>
+        <!--copyright-->
+        <p class="copyright">Thank you. You've reached the end</p>
+    </footer>
+    <!--social-attach-bar-->
+    <div class="social">
+        <a href="https://www.facebook.com/ayrat.aymetov"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/<19147335068?text=Hey, I would like to contact you>"><i class="fas fa-comment"></i></a>
+        <a href="mailto:ayrama1986@outlook.com"><i class="far fa-envelope"></i></a>
+    </div>
+    <!--JQUery-------------------->
+    <script type="text/javascript" src="js/JQuery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+</html>
